@@ -1,0 +1,222 @@
+[
+  {
+    "numero": 1,
+    "fecha": "2025-11-01",
+    "descripcion": "Depósito de Nómina",
+    "referencia": "DEP-001",
+    "categoria": "Ingreso",
+    "tipo": "Abono",
+    "cargo": null,
+    "abono": 3500.00
+  },
+  {
+    "numero": 2,
+    "fecha": "2025-11-02",
+    "descripcion": "Mercado Frescos S.A.",
+    "referencia": "TRX-002",
+    "categoria": "Alimentación",
+    "tipo": "Cargo",
+    "cargo": 125.50,
+    "abono": null
+  },
+  {
+    "numero": 3,
+    "fecha": "2025-11-02",
+    "descripcion": "MOVISTAR - Teléfono",
+    "referencia": "TRX-003",
+    "categoria": "Servicios",
+    "tipo": "Cargo",
+    "cargo": 89.99,
+    "abono": null
+  },
+  {
+    "numero": 4,
+    "fecha": "2025-11-03",
+    "descripcion": "Tienda Liverpool - Ropa",
+    "referencia": "TRX-004",
+    "categoria": "Vestido",
+    "tipo": "Cargo",
+    "cargo": 450.00,
+    "abono": null
+  },
+  {
+    "numero": 5,
+    "fecha": "2025-11-04",
+    "descripcion": "UBER",
+    "referencia": "TRX-005",
+    "categoria": "Transporte",
+    "tipo": "Cargo",
+    "cargo": 48.25,
+    "abono": null
+  },
+  {
+    "numero": 6,
+    "fecha": "2025-11-05",
+    "descripcion": "Cine Cinépolis",
+    "referencia": "TRX-006",
+    "categoria": "Entretenimiento",
+    "tipo": "Cargo",
+    "cargo": 180.00,
+    "abono": null
+  },
+  {
+    "numero": 7,
+    "fecha": "2025-11-05",
+    "descripcion": "Depósito Cliente XYZ",
+    "referencia": "DEP-002",
+    "categoria": "Ingreso",
+    "tipo": "Abono",
+    "cargo": null,
+    "abono": 2000.00
+  },
+  {
+    "numero": 8,
+    "fecha": "2025-11-06",
+    "descripcion": "Universidad - Matrícula",
+    "referencia": "TRX-007",
+    "categoria": "Estudios",
+    "tipo": "Cargo",
+    "cargo": 1200.00,
+    "abono": null
+  },
+  {
+    "numero": 9,
+    "fecha": "2025-11-07",
+    "descripcion": "Farmacia Guadalajara",
+    "referencia": "TRX-008",
+    "categoria": "Salud",
+    "tipo": "Cargo",
+    "cargo": 156.75,
+    "abono": null
+  },
+  {
+    "numero": 10,
+    "fecha": "2025-11-08",
+    "descripcion": "Gasolinera PEMEX",
+    "referencia": "TRX-009",
+    "categoria": "Transporte",
+    "tipo": "Cargo",
+    "cargo": 600.00,
+    "abono": null
+  },
+  {
+    "numero": 11,
+    "fecha": "2025-11-09",
+    "descripcion": "Amazon - Compra Online",
+    "referencia": "TRX-010",
+    "categoria": "Entretenimiento",
+    "tipo": "Cargo",
+    "cargo": 299.99,
+    "abono": null
+  },
+  {
+    "numero": 12,
+    "fecha": "2025-11-10",
+    "descripcion": "Pago de Renta - Apto",
+    "referencia": "TRX-011",
+    "categoria": "Vivienda",
+    "tipo": "Cargo",
+    "cargo": 3000.00,
+    "abono": null
+  },
+  {
+    "numero": 13,
+    "fecha": "2025-11-11",
+    "descripcion": "Depósito de Freelance",
+    "referencia": "DEP-003",
+    "categoria": "Ingreso",
+    "tipo": "Abono",
+    "cargo": null,
+    "abono": 1500.00
+  },
+  {
+    "numero": 14,
+    "fecha": "2025-11-12",
+    "descripcion": "Walmart - Abarrotes",
+    "referencia": "TRX-012",
+    "categoria": "Alimentación",
+    "tipo": "Cargo",
+    "cargo": 278.50,
+    "abono": null
+  },
+  {
+    "numero": 15,
+    "fecha": "2025-11-13",
+    "descripcion": "Comisión Bancaria",
+    "referencia": "TRX-013",
+    "categoria": "Servicios",
+    "tipo": "Cargo",
+    "cargo": 50.00,
+    "abono": null
+  },
+  {
+    "numero": 16,
+    "fecha": "2025-11-14",
+    "descripcion": "Restaurante La Trattoria",
+    "referencia": "TRX-014",
+    "categoria": "Alimentación",
+    "tipo": "Cargo",
+    "cargo": 385.00,
+    "abono": null
+  },
+  {
+    "numero": 17,
+    "fecha": "2025-11-15",
+    "descripcion": "Netflix Suscripción",
+    "referencia": "TRX-015",
+    "categoria": "Entretenimiento",
+    "tipo": "Cargo",
+    "cargo": 199.00,
+    "abono": null
+  },
+  {
+    "numero": 18,
+    "fecha": "2025-11-16",
+    "descripcion": "Coppel - Electrodoméstico",
+    "referencia": "TRX-016",
+    "categoria": "Vivienda",
+    "tipo": "Cargo",
+    "cargo": 2500.00,
+    "abono": null
+  },
+  {
+    "numero": 19,
+    "fecha": "2025-11-19",
+    "descripcion": "Transferencia Familia",
+    "referencia": "DEP-004",
+    "categoria": "Ingreso",
+    "tipo": "Abono",
+    "cargo": null,
+    "abono": 500.00
+  },
+  {
+    "numero": 20,
+    "fecha": "2025-11-20",
+    "descripcion": "Dentista Clínica Plus",
+    "referencia": "TRX-017",
+    "categoria": "Salud",
+    "tipo": "Cargo",
+    "cargo": 850.00,
+    "abono": null
+  },
+  {
+    "numero": 21,
+    "fecha": "2025-11-22",
+    "descripcion": "Yoga Classes - Mensual",
+    "referencia": "TRX-018",
+    "categoria": "Entretenimiento",
+    "tipo": "Cargo",
+    "cargo": 400.00,
+    "abono": null
+  },
+  {
+    "numero": 22,
+    "fecha": "2025-11-25",
+    "descripcion": "Soriana - Supermercado",
+    "referencia": "TRX-019",
+    "categoria": "Alimentación",
+    "tipo": "Cargo",
+    "cargo": 520.75,
+    "abono": null
+  }
+]

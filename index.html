@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conciliacion Bancaria</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div id="banco">
+        <h1>CONCILIACION BANCARIA</h1>
+        <div id="acciones_contenedor">
+            <section id="movimientoBancarios">
+                <h2 id="movimientoBancarios_titulo">Registrar Movimiento</h2>
+                <div id="agregarMovimiento">
+                    <button id="agregarMovimiento_btAgregarAbono">Abono</button>
+                    <button id="agregarMovimiento_btAgregarCargo">Cargo</button>
+                </div>
+                <div id="movimientoForm" style="display: none;">
+                    <h2 id="movimientoForm_titulo">Registrar <span id="movimientoForm_lblTipoMovimiento"></span></h2>
+                    <label>
+                        Fecha y hora:
+                        <input type="text" id="movimientoForm_inFechaHora" placeholder="Fecha y hora">
+                    </label>
+                    <label>
+                        Referencia:
+                        <input type="text" id="movimientoForm_inReferencia" placeholder="Referencia">
+                    </label>
+                    <label>
+                        Categoría:
+                            <select id="movimientoForm_inCategoria" required>
+                                <option value="" disabled selected hidden>Seleccione la categoría</option>
+                            </select>
+                    </label>
+                    <label>
+                        Descripción:
+                        <input type="text" id="movimientoForm_inDescripcion" placeholder="Descripción">
+                    </label>
+                    <label>
+                        Monto:
+                        <input type="text" id="movimientoForm_inMonto" placeholder="Monto">
+                    </label>
+                <div id="movimientoForm_botonesMovimientos">
+                    <button id="movimientoForm_btRegistrarMovimiento">Registrar</button>
+                    <button id="movimientoForm_btActualizarMovimiento" class="hidden">Actualizar</button>
+                    <button id="movimientoForm_btCancelarMovimiento">Cancelar</button>
+                </div>
+                </div>
+            </section>
+    
+            <section id="operaciones">
+                <h2>Operaciones</h2>
+                <div id="botonesOperaciones">
+
+                    <button id="agregarMovimiento_btConciliar">Conciliar</button>
+                </div>
+            </section>
+        </div>
+            <section id="saldoTotal">
+            <div id="saldoTotal_contenedor">
+                <h2>Saldo Total</h2>
+                <p id="saldoTotal_pSaldoTotal"></p>
+            </div>
+            <button id="saldoTotal_btnVerMovimientos">Ver Movimientos</button>
+        </section>
+        <section id="tablaMovimientos" style="display: none;">
+            <div id="tablaMovimientos_header">
+                <h2>Tabla de movimientos</h2>
+                <button id="tablaMovimientos_btRegresar">Regresar</button>
+            </div>
+            <div id="filtrosMovimientos">
+                <div class="filtro-grupo">
+                    <label for="filtro_busqueda">Buscar:</label>
+                    <input type="text" id="filtro_busqueda" placeholder="Referencia o descripción...">
+                </div>
+                <div class="filtro-grupo">
+                    <label for="filtro_categoria">Categoría:</label>
+                    <select id="filtro_categoria">
+                        <option value="">Todas</option>
+                    </select>
+                </div>
+                <div class="filtro-grupo">
+                    <label for="filtro_tipo">Tipo:</label>
+                    <select id="filtro_tipo">
+                        <option value="">Todos</option>
+                        <option value="Abono">Abono</option>
+                        <option value="Cargo">Cargo</option>
+                    </select>
+                </div>
+                <div class="filtro-grupo">
+                    <label for="filtro_fecha_inicio">Desde:</label>
+                    <input type="date" id="filtro_fecha_inicio">
+                </div>
+                <div class="filtro-grupo">
+                    <label for="filtro_fecha_fin">Hasta:</label>
+                    <input type="date" id="filtro_fecha_fin">
+                </div>
+                <div class="filtro-botones">
+                    <button id="btn_aplicar_filtros">Filtrar</button>
+                    <button id="btn_limpiar_filtros">Limpiar</button>
+                </div>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Fecha hora</th>
+                        <th>Categoría</th>
+                        <th>Monto</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaMovimientos_body">
+                </tbody>
+            </table>
+        </section>
+        
+        <section id="vistaConciliacion" style="display: none;">
+            <h2>Conciliación Bancaria</h2>
+            <div id="conciliacionForm">
+                <label>
+                    Cargar Estado de Cuenta (JSON):
+                    <input type="file" id="conciliacion_inArchivo" accept=".json">
+                </label>
+                <button id="conciliacion_btConciliar">Conciliar</button>
+                <button id="conciliacion_btRegresar">Regresar</button>
+            </div>
+            <h3>Resultados de Conciliación</h3>
+            <table id="tablaConciliacion">
+                <thead>
+                    <tr>
+                        <th>Fecha hora</th>
+                        <th>Categoría</th>
+                        <th>Monto</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="tablaConciliacion_body">
+                </tbody>
+            </table>
+        </section>
+    
+        <section id="vistaDetalle" style="display: none;">
+            <h2>Detalle del Movimiento</h2>
+            <div id="detalleMovimiento">
+                <p><strong>Fecha y Hora:</strong> <span id="detalle_fecha"></span></p>
+                <p><strong>Referencia:</strong> <span id="detalle_referencia"></span></p>
+                <p><strong>Categoría:</strong> <span id="detalle_categoria"></span></p>
+                <p><strong>Descripción:</strong> <span id="detalle_descripcion"></span></p>
+                <p><strong>Monto:</strong> <span id="detalle_monto"></span></p>
+                <p><strong>Tipo:</strong> <span id="detalle_tipo"></span></p>
+                <button id="detalle_btRegresar">Regresar</button>
+            </div>
+        </section>
+    </div>
+    <footer id="footer">
+        <p>Designed by <span class="footer-brand">TheGitGuardians</span></p>
+    </footer>
+    <script type="module">
+        import Cl_index from "./dist/Cl_index.js";
+        new Cl_index();
+    </script>
+</body>
+</html>

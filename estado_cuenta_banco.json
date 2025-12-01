@@ -1,0 +1,82 @@
+[
+    {
+        "fechaHora": "20-11-2025 11:00",
+        "referencia": "MOV-001",
+        "categoria": "Transporte",
+        "descripcion": "Ruta Universidad",
+        "monto": 50.00,
+        "tipo": "Cargo"
+    },
+    {
+        "fechaHora": "20-11-2025 17:00",
+        "referencia": "MOV-002",
+        "categoria": "Transporte",
+        "descripcion": "Ruta Universidad",
+        "monto": 50.00,
+        "tipo": "Cargo"
+    },
+    {
+        "fechaHora": "20-11-2025 08:00",
+        "referencia": "MOV-003",
+        "categoria": "Alimentación",
+        "descripcion": "Desayuno",
+        "monto": 450.00,
+        "tipo": "Cargo"
+    },
+    {
+        "fechaHora": "26-11-2025 08:15",
+        "referencia": "MOV-004",
+        "categoria": "Servicios",
+        "descripcion": "Pago de internet",
+        "monto": 1500.00,
+        "tipo": "Cargo"
+    },
+    {
+        "fechaHora": "26-11-2025 10:30",
+        "referencia": "MOV-005",
+        "categoria": "Ingreso",
+        "descripcion": "Salario",
+        "monto": 4500.00,
+        "tipo": "Abono"
+    },
+    {
+        "fechaHora": "27-11-2025 14:00",
+        "referencia": "MOV-006",
+        "categoria": "Entretenimiento",
+        "descripcion": "Cine y palomitas",
+        "monto": 250.00,
+        "tipo": "Cargo"
+    },
+    {
+        "fechaHora": "28-11-2025 09:00",
+        "referencia": "MOV-007",
+        "categoria": "Retiro Efectivo",
+        "descripcion": "Retiro ATM",
+        "monto": 1000.00,
+        "tipo": "Cargo"
+    },
+    {
+        "fechaHora": "28-11-2025 16:30",
+        "referencia": "MOV-008",
+        "categoria": "Ingreso",
+        "descripcion": "Transferencia de amigo",
+        "monto": 300.00,
+        "tipo": "Abono"
+    },
+    {
+        "fechaHora": "29-11-2025 11:45",
+        "referencia": "MOV-009",
+        "categoria": "Alimentación",
+        "descripcion": "Compras supermercado",
+        "monto": 850.50,
+        "tipo": "Cargo"
+    },
+    {
+        "fechaHora": "30-11-2025 10:00",
+        "referencia": "MOV-010",
+        "categoria": "Servicios",
+        "descripcion": "Pago de luz",
+        "monto": 720.00,
+        "tipo": "Cargo"
+    }
+]

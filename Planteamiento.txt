@@ -1,0 +1,58 @@
+Clases:
+
+Clase Menor: Categoria
+Atributos:
+Nombre
+
+Clase Menor: Movimiento
+Atributos:
+Fecha y Hora
+Referencia
+Tipo
+Categoria
+Descripcion
+Monto
+
+Clase Mayor: Banco
+Atributos: 
+Saldo Total
+Metodo: Conciliar Movimientos
+
+Flujo de Trabajo: 
+
+En la vista principal sera visible la opcion de agregar un Moviemiento con los botones Abono y Cargo, un boton para agregar nuevas categorias y un boton para conciliar movimientos y el saldo total.
+
+Al seleccionar el boton para registrar nuevas categorias, se activara la vista para agregar nuevas categorias.
+
+En la vista de categorias se ingresaran los atributos de la categoria a registrar, el cual sera solamente el nombre de la categoria.
+
+En la vista de categorias debe ser visible una tabla con las categorias registradas con la columna de acciones donde se puede eliminar o editar la categoria.
+
+Las categorias registradas se guardaran en la tabla de categorias.
+
+Al seleccionar el boton con el tipo de movimiento, se activara la vista para agregar movimientos con el titulo "Registrar Cargo" o "Registrar Abono".
+
+En las vista de movimientos se ingresaran los atributos del movimiento a registrar y los botones de registrar y cancelar.
+
+Los movimientos registrados se guardaran en la tabla de movimientos.
+
+Al utilizar el boton "Ver Movimientos" se hara visible la tabla con los movimientos registrados, pero solo seran visibles las columnas Fecha y Hora, Categoria y Monto con una columna de acciones donde se puede detallar, eliminar o editar el movimiento.
+
+Sobre la tabla de movimientos se mostraran opciones para filtrar los movimientos por referencia, tipo, categoria y por fecha.
+
+En la vista de detallar se mostrara la informacion del movimiento seleccionado y el boton de regresar.
+
+En la vista editar se ingresaran los atributos del movimiento a editar y los botones de actualizar y cancelar.
+
+En la vista de la tabla de Moviemiento siempre sera visible un boton para regresar a la vista principal.
+
+Al seleccionar el boton "Conciliar Movimientos" se activara la vista para conciliar movimientos.
+
+En la vista de Conciliar Moviemientos se mostrara un campo para cargar el archivo JSON del estado de cuenta y un boton para conciliar, al igual que un boton para regresar a la vista principal.
+
+Este JSON ser comparara con los movimientos registrados y se mostrara una tabla con los movimientos conciliados y no conciliados, pero solo seran visibles las columnas Fecha y Hora, Categoria, Monto y Estado con una columna de acciones donde se puede conciliar.
+
+Los no conciliados se mostraran con un boton para conciliar.
+
+Al seleccionar el boton "Conciliar" se hara visible la vista registrar movimientos ya con los atributos del movimiento no conciliado.
+
