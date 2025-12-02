@@ -5,12 +5,12 @@ import Cl_mMovimiento, { iMovimiento } from "./Cl_mMovimiento.js";
 export default class Cl_mBanco {
     private movimientos: Cl_mMovimiento[] = [];
     private categorias: Cl_mCategoria[] = [];
-    private saldoTotal: number = 0;
+    private saldo: number = 0;
 
     constructor() {
         this.movimientos = [];
         this.categorias = [];
-        this.saldoTotal = 0;
+        this.saldo = 0;
     }
 
     addMovimiento({
@@ -59,7 +59,7 @@ export default class Cl_mBanco {
 
             const oldMov = this.movimientos[index];
             if (oldMov) {
-                this.saldoTotal -= oldMov.montoOperacion();
+                this.saldo -= oldMov.montoOperacion();
             }
 
 
@@ -86,7 +86,7 @@ export default class Cl_mBanco {
         else {
             const movimiento = this.movimientos[indice];
             if (movimiento) {
-                this.saldoTotal -= movimiento.montoOperacion();
+                this.saldo -= movimiento.montoOperacion();
                 this.movimientos.splice(indice, 1);
                 callback(false);
             } else {
@@ -96,11 +96,11 @@ export default class Cl_mBanco {
     }
 
     procesarMovimientos(movimiento: Cl_mMovimiento){
-        this.saldoTotal += movimiento.montoOperacion();
+        this.saldo += movimiento.montoOperacion();
     }
 
-    SaldoActual(): number {
-        return this.saldoTotal;
+    saldoTotal(): number {
+        return this.saldo;
     }
 
     cargarBanco(callback: (error: string | false) => void): void {
@@ -119,7 +119,7 @@ export default class Cl_mBanco {
 
     llenarMovimientos(movimientos: iMovimiento[]) {
         this.movimientos = [];
-        this.saldoTotal = 0;
+        this.saldo = 0;
         movimientos.forEach((movimiento: iMovimiento) => {
             let mov = new Cl_mMovimiento(movimiento);
             this.movimientos.push(mov);

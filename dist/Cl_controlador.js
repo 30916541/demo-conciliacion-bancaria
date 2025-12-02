@@ -36,7 +36,7 @@ export default class Cl_controlador {
                     Swal.fire('Error', error, 'error');
                 else {
                     Swal.fire('Éxito', 'Movimiento registrado correctamente', 'success');
-                    this.vista.actualizarSaldo(this.modelo.SaldoActual());
+                    this.vista.actualizarSaldo(this.modelo.saldoTotal());
                     this.vMovimiento.ocultarFormulario();
                     this.mostrarVistaPrincipal();
                 }
@@ -80,7 +80,7 @@ export default class Cl_controlador {
                     Swal.fire('Error', error, 'error');
                 else {
                     Swal.fire('Éxito', 'Movimiento actualizado correctamente', 'success');
-                    this.vista.actualizarSaldo(this.modelo.SaldoActual());
+                    this.vista.actualizarSaldo(this.modelo.saldoTotal());
                     this.vMovimiento.ocultarFormulario();
                     this.mostrarTablaMovimientos();
                 }
@@ -105,7 +105,7 @@ export default class Cl_controlador {
                             Swal.fire('Error', error, 'error');
                         else {
                             Swal.fire('Eliminado!', 'El movimiento ha sido eliminado.', 'success');
-                            this.vista.actualizarSaldo(this.modelo.SaldoActual());
+                            this.vista.actualizarSaldo(this.modelo.saldoTotal());
                             this.mostrarTablaMovimientos();
                         }
                     }
@@ -151,7 +151,7 @@ export default class Cl_controlador {
                     Swal.fire('Error', error, 'error');
                 else {
                     Swal.fire('Éxito', 'Movimiento registrado correctamente', 'success');
-                    this.vista.actualizarSaldo(this.modelo.SaldoActual());
+                    this.vista.actualizarSaldo(this.modelo.saldoTotal());
                     this.vMovimiento.ocultarFormulario();
                     this.actualizarTablaConciliacion(movimiento.referencia);
                     this.mostrarConciliacion();

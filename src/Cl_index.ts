@@ -14,7 +14,7 @@ export default class Cl_index {
             let controlador = new Cl_controlador(modelo, vista);
             vista.controlador = controlador;
             
-            vista.actualizarSaldo(modelo.SaldoActual());
+            vista.actualizarSaldo(modelo.saldoTotal());
             vista.mostrarVistaPrincipal();
         });
     }
